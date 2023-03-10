@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<style>
+    body{
+        background-color: blueviolet;
+    }
+    
+    .form{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-image: linear-gradient(30deg, black, orange,aquamarine );
+        margin: 10px;
+        padding: 30px;
+        border: 3px solid red;
+        transform: ;
+        color: ;
+    }
+    
+    .botao{
+        background-color: darkgreen;
+        border: 2px solid red;
+        height: 45px;
+        width: 100px;
+        font-size: 20px;
+        border-radius: 50px;
+        cursor: pointer;
+        color: aliceblue;
+        
+       
+    }
+    .option{
+        position: relative;
+        background-color: blue;
+        height: 20%;
+        width: 30%;
+        border-radius: 50px;
+        color: antiquewhite;
+        top: -25px;
+    }
+    .reset{
+        position: absolute;
+        background-color: darkgreen;
+        border: 2px solid red;
+        height: 45px;
+        width: 100px;
+        font-size: 20px;
+        border-radius: 50px;
+        cursor: pointer;
+        color: aliceblue;
+        left: 400px;
+
+    }
+    .form input{
+        background-color: rgb(156, 189, 189) ;
+        border: none;
+        height: 25px;
+        width: 400px;
+        border-radius: 10px;
+        color: black;
+    }
+    .textarea{
+        background-color: coral;
+        color: black;
+        font-size: 20px;
+        width: 450px;
+        height: 150px;
+    }
+</style>
+    
+
+<body>
+    
+    <div class="form">
+    <form>
+        <h3>Primeiro Nome: <input placeholder="Firstname" type="text" name="firstname"></h3> 
+        <h3>Segundo Nome: <input placeholder="Secondname" type="text" name="secondname"></h3>
+        <h3>Email: <input type="text" name="email"placeholder="Email"  ></h3>
+        <h3>Senha: <input type="password"> </h3>
+        <br>
+        <h3>Qual dos lugares abaixo voce mais gosta?</h3> 
+        <br>
+      
+       <select class="option">
+            <option  value="RJ">RJ</option>
+            <option value="SP">BA</option>
+            <option value="BA">SP</option>
+            <option value="AL">AL</option>
+            <option value="MA">MA</option>
+            <option value="PE">PE</option>
+            <option value="RN">RN</option>
+        </select>
+        <h3>Qual pais voce nao moraria de jeito nenhum?</h3>
+        <br>
+        <select class="option">
+            <option  value="Peru">Peru</option>
+            <option value="Venezuela">Venezuela</option>
+            <option value="Chile">Chile</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Uruguai">Uruguai</option>
+            <option value="Bolivia">Bolivia</option>
+            <option value="Colombia">Colombia</option>
+            <option value="Suriname">Suriname</option>
+        </select>
+            <br>
+            <h3>Qual sua opniao sobre a segunda guerra mundial?</h3>
+            <textarea class="textarea"  placeholder="Digite aqui sua opniao!" name="guerra"  id="guerra" cols="30" rows="10"></textarea>
+
+
+        <br>
+        <button class="botao"> Enviar </button>
+        <button class="reset" type="reset" >Limpar</button>
+        
+
+        
+
+      
+    </form>
+</div>
+
+</body>
+</html>
